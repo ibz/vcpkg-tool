@@ -15,7 +15,7 @@
 #include <mach-o/dyld.h>
 #endif
 
-#if defined(__FreeBSD__)
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 #include <sys/sysctl.h>
 #include <sys/wait.h>
 #endif

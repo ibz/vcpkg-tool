@@ -8,6 +8,11 @@
 
 #include <vector>
 
+#if defined(__OpenBSD__)
+#undef major
+#undef minor
+#endif
+
 namespace vcpkg::Export::Prefab
 {
     constexpr int kFragmentSize = 3;
